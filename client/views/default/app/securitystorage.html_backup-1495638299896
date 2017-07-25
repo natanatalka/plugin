@@ -1,0 +1,93 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-dark" data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left"></ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1">Secure Storage Plugin</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon ion-home" data-comp-id="button.1"
+                ng-click="app.go('app.pluginlist')"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content data-comp-id="ionic-content.1">
+        <div class="row assertive" data-comp-id="row.1">
+            <div class="col" data-comp-id="column.1"></div>
+        </div>
+        <div class="row assertive" data-comp-id="row.2">
+            <div class="col" data-comp-id="column.2"></div>
+        </div>
+        <div class="row" data-comp-id="row.3">
+            <div class="col" data-comp-id="column.3"></div>
+        </div>
+        <div class="row" data-comp-id="row.4">
+            <div class="col" data-comp-id="column.4">
+                <div class=" assertive"></div>
+                <label class="item item-input" data-comp-id="textInput.1">
+                    <span class="input-label dark">username</span>
+                    <input ng-model="data.username" type="text">
+                </label>
+                <div class="row" data-comp-id="row.5">
+                    <div class="col" data-comp-id="column.5"></div>
+                </div>
+                <div class=" assertive"></div>
+                <label class="item item-input" data-comp-id="textInput.2">
+                    <span class="input-label dark">password</span>
+                    <input ng-model="data.password" type="text">
+                </label>
+            </div>
+        </div>
+        <div class="row" data-comp-id="row.6">
+            <div class="col" data-comp-id="column.6"></div>
+        </div>
+        <div class="row" data-comp-id="row.7">
+            <div class="col" data-comp-id="column.7">
+                <button class="button button-block light-border button-dark"
+                    data-comp-id="button.2" ng-click="setCredentials(data.username, data.password)">Set credentials</button>
+            </div>
+        </div>
+        <div class="row" data-comp-id="row.8">
+            <div class="col" data-comp-id="column.8"></div>
+        </div>
+        <div data-comp-id="div.1" ng-show="showGetCredentials">
+            <div class="row" data-comp-id="row.9">
+                <div class="col" data-comp-id="column.9">
+                    <button class="button button-block light-border button-dark"
+                        data-comp-id="button.3" ng-click="getCredentials()">Get credentials</button>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.10">
+                <div class="col" data-comp-id="column.10">
+                    <div class=" dark" data-comp-id="text.1" style="font-style: italic;">Username</div>
+                </div>
+                <div class="col" data-comp-id="column.11">
+                    <div class=" dark" data-comp-id="text.2" ng-bind="username"></div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.11">
+                <div class="col" data-comp-id="column.12">
+                    <div class=" dark" data-comp-id="text.3" style="font-style: italic;">Password</div>
+                </div>
+                <div class="col" data-comp-id="column.13">
+                    <div class=" dark" data-comp-id="text.4" ng-bind="password"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-comp-id="row.12" ng-show="showClearAll">
+            <div class="col" data-comp-id="column.14"></div>
+            <div class="col" data-comp-id="column.15" style="padding: 70px 0px 0px;">
+                <button class="button button-block light-border button-dark"
+                    data-comp-id="button.4" ng-click="clearAll()">Clear all</button>
+            </div>
+        </div>
+    </ion-content>
+    <div class="footer-button-bar" data-comp-id="footer-bar-buttons.1"
+        dynamic-floating-footer="">
+        <div class="row" data-comp-id="row.13" style="padding: 0px;">
+            <div class="col" data-comp-id="column.16" style="padding: 0px;">
+                <div class="footer-button" data-comp-id="footerButton.1">
+                    <button class="button icon button-round button-shadowed ion-arrow-left-c"
+                        ng-click="app.go('app.pluginslist')"></button>
+                    <div class="label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-view>

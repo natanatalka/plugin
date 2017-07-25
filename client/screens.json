@@ -1,0 +1,75 @@
+{
+  "id": "app",
+  "name": "Test plugins app",
+  "startScreen": "app.pluginslist",
+  "screens": [
+    {
+      "id": "menu",
+      "name": "menu",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.menu"
+    },
+    {
+      "id": "multiselect",
+      "name": "multiselect",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.multiselect"
+    },
+    {
+      "id": "pluginslist",
+      "name": "Plugins list",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "touchid",
+      "name": "Touch ID",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "ionickeyboard",
+      "name": "Ionic keyboard",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "inappbrowser",
+      "name": "Inappbrowser",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "barcodescanning",
+      "name": "Barcode scanning",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "securestorage",
+      "name": "Secure storage",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "pdfpreview",
+      "name": "PDF preview",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "camera",
+      "name": "Camera",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "screenrotation",
+      "name": "Screen rotation",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    }
+  ],
+  "sourceAppId": "_blank",
+  "sourceScreenId": "app"
+}

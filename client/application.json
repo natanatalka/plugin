@@ -1,0 +1,12 @@
+{
+  "name": "Test plugins app",
+  "description": "App for plugins testing",
+  "defaultLayout": "tablet-portrait",
+  "previewToken": "0d20c45b",
+  "uiCommonVersion": "5.0.38",
+  "creatorId": "admin",
+  "id": "testplugins",
+  "previewImageURL": "http://192.168.102.103:5000/apps/0d20c45b-testplugins/images/previews/app/pluginslist.png",
+  "isBuiltInTemplate": false,
+  "creatorName": "PowWow Admin"
+}

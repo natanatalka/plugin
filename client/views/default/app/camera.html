@@ -1,0 +1,69 @@
+<ion-view data-comp-id="ionic-view.1">
+    <div class="row">
+        <div class="col" data-comp-id="column.1"></div>
+    </div>
+    <ion-content data-comp-id="ionic-content.1">
+        <div ata-comp-id="row.1" class="row">
+            <div class="col" data-comp-id="column.2">
+                <button class="button button-block light-border button-stable dark"
+                    data-comp-id="button.1" ng-click="capturePhoto()">Capture photo base64</button>
+            </div>
+            <div class="col" data-comp-id="column.3">
+                <button class="button button-block light-border button-stable dark"
+                    data-comp-id="button.2" ng-click="capturePhotoURI()">Capture photo photoURI</button>
+            </div>
+        </div>
+        <div class="row" data-comp-id="row.1">
+            <div class="col" data-comp-id="column.4"><img data-comp-id="image.1" data-img="" id="imageBase64_1"
+                ng-src="images/default.png" style="display:none;width:300px;height:300px;">
+            </div>
+            <div class="col" data-comp-id="column.5"><img data-comp-id="image.2" data-img="" id="imageURI_1"
+                ng-src="images/default.png" style="display:none;width:150px;height:150px;">
+            </div>
+        </div>
+        <div class="row" data-comp-id="row.2">
+            <div class="col" data-comp-id="column.6">
+                <button class="button button-block light-border button-stable dark"
+                    data-comp-id="button.3" ng-click="getPhoto()">Choose from library</button>
+            </div>
+            <div class="col" data-comp-id="column.7">
+                <button class="button button-block light-border" data-comp-id="button.4"
+                    ng-click="getPhotoURI()">Choose from album</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row" data-comp-id="column.8">
+            <div class="col"><img data-comp-id="image.3" data-img="" id="imageBase64_2"
+                ng-src="images/default.png"
+                style="display: none; width: 300px; height: 300px; float: none;"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col" data-comp-id="column.9"></div>
+        </div>
+    </ion-content>
+    <div class="footer-button-bar" data-comp-id="footer-bar-buttons.1"
+        dynamic-floating-footer="">
+        <div class="row" data-comp-id="row.3" style="padding: 0px;">
+            <div class="col" data-comp-id="column.10" style="padding: 0px;">
+                <div class="footer-button" data-comp-id="footerButton.1">
+                    <button class="button icon button-round button-shadowed ion-arrow-left-c"
+                        ng-click="app.go('app.pluginslist')"></button>
+                    <div class="label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-view>

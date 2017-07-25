@@ -1,0 +1,44 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-content data-comp-id="ionic-content.1">
+        <div class="row" data-comp-id="row.1">
+            <div class="col" data-comp-id="column.1">
+                <button class="button button-block" data-comp-id="button.1"
+                    ng-click="downloadPDFfile()">Download PDF file</button>
+                <div class="row" data-comp-id="row.2">
+                    <div class="col" data-comp-id="column.2">
+                        <div data-comp-id="text.1" style="font-style: italic;">Path of downloaded file</div>
+                    </div>
+                    <div class="col" data-comp-id="column.3">
+                        <div data-comp-id="text.2" ng-bind="filePath"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-comp-id="row.3" ng-if="showViewPdf">
+            <div class="col" data-comp-id="column.4">
+                <button class="button button-block button-stable dark" color="null"
+                    data-comp-id="button.2" ng-click="viewPdfFile()">View PDF file</button>
+                <div class="row" data-comp-id="row.4">
+                    <div class="col" data-comp-id="column.5"></div>
+                    <div class="col" data-comp-id="column.6" style="padding: 50px 0px 0px;"></div>
+                    <div class="col" data-comp-id="column.7" style="padding: 50px 0px 0px;">
+                        <button class="button button-block button-stable" data-comp-id="button.3"
+                            ng-click="deleteFile()" style="font-size: 14px;">Delete file</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <div class="footer-button-bar" data-comp-id="footer-bar-buttons.1"
+        dynamic-floating-footer="">
+        <div class="row" data-comp-id="row.5" style="padding: 0px;">
+            <div class="col" data-comp-id="column.8" style="padding: 0px;">
+                <div class="footer-button" data-comp-id="footerButton.1">
+                    <button class="button icon button-round button-shadowed ion-arrow-left-c"
+                        ng-click="app.go('app.pluginslist')"></button>
+                    <div class="label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-view>

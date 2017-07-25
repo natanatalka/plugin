@@ -1,0 +1,75 @@
+angular.module('app').controller('app_securecredentialsstore', app_securecredentialsstore);
+
+function app_securecredentialsstore($scope, app) {
+    'use strict';
+    app.init($scope);
+
+    $scope.showGetCredentials = false;
+    $scope.showClearAll = false;
+    $scope.username = '';
+    $scope.password = '';
+    var keyUsername = 'username';
+    var keyPassword = 'password';
+
+    $scope.ss = new cordova.plugins.SecureStorage(
+        function() {},
+        function(error) {
+            console.log('Error ' + error);
+        }, 'my_app');
+
+    $scope.setCredentials = function(name, password) {
+        $scope.ss.set(
+            function(keyUsername) {},
+            function(error) {
+                alert('Error ' + error);
+            },
+            keyUsername, name);
+
+        $scope.ss.set(
+            function(keyPassword) {},
+            function(error) {
+                alert('Error ' + error);
+            },
+            keyPassword, password);
+        alert('Set username: ' + name + ', password: ' + password);
+        $scope.showGetCredentials = true;
+        $scope.showClearAll = true;
+    }
+
+    $scope.getCredentials = function() {
+        $scope.ss.get(
+            function(value) {
+                $scope.username = value;
+                $scope.$apply();
+            },
+            function(error) {
+                alert('Error ' + error);
+            },
+            keyUsername);
+
+
+        $scope.ss.get(
+            function(value) {
+                $scope.password = value;
+                $scope.$apply();
+            },
+            function(error) {
+                alert('Error ' + error);
+            },
+            keyPassword);
+    }
+
+    $scope.clearAll = function() {
+        $scope.ss.clear(
+            function() {
+                alert('Cleared');
+            },
+            function(error) {
+                alert('Error, ' + error);
+            });
+        $scope.username = '';
+        $scope.password = '';
+        $scope.showGetCredentials = false;
+        $scope.showClearAll = false;
+    }
+}
